@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Skywatch Club | Home</title>
+
+  <!-- external style sheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- internal style sheet -->
+  <style>
+    /* internal CSS: page-only highlight */
+    .welcome-badge{
+      display:inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(234,240,255,.18);
+      background: rgba(110,231,255,.12);
+      color: #eaf0ff;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="site-title">Skywatch Club</h1>
+    <p class="tagline">A small 4-page website about stargazing, meetups, and gear.</p>
+
+    <!-- button navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html"><button class="navbtn" type="button">Home</button></a>
+      <a href="gallery.html"><button class="navbtn" type="button">Gallery</button></a>
+      <a href="plan.html"><button class="navbtn" type="button">Meetup Plan</button></a>
+      <a href="contact.html"><button class="navbtn" type="button">Join / Contact</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <span class="welcome-badge">New: February sky targets</span>
+      <h2 style="margin-top:12px; color: var(--accent);">Welcome</h2><!-- inline style sheet -->
+      <p>
+        Skywatch Club is a student-friendly group that meets monthly to learn constellations,
+        share telescope tips, and plan night-sky photo walks.
+      </p>
+      <p class="small">
+        Quick links: visit our <a href="gallery.html">gallery</a>, check the <a href="plan.html">meetup plan</a>,
+        or <a href="contact.html">sign up</a>.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>What we do</h3>
+        <ul>
+          <li>Beginner constellation tours</li>
+          <li>Moon + planet viewing nights</li>
+          <li>Photo sharing and critique</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>How a night works</h3>
+        <ol>
+          <li>Meet at the location 20 minutes before sunset</li>
+          <li>Safety check: flashlights, warm layers, battery</li>
+          <li>Observe targets and take photos</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h3>Useful external links</h3>
+        <p class="small">
+          These are regular hyperlinks (external):
+        </p>
+        <p>
+          <a href="https://www.nasa.gov" target="_blank" rel="noopener">NASA</a><br>
+          <a href="https://www.timeanddate.com/astronomy/" target="_blank" rel="noopener">Astronomy on Timeanddate</a><br>
+          <a href="mailto:skywatch@example.com">Email the club</a>
+        </p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Featured image</h2>
+      <figure>
+        <img src="images/nebula.svg" alt="Abstract nebula night placeholder image">
+        <figcaption>We use local SVG images so the site always loads on the course server.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Skywatch Club website — built for CS2060 requirements.</p>
+  </footer>
+</body>
+</html>

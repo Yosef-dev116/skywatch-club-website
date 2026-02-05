@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Skywatch Club | Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* internal CSS for this page only */
+    .hint{
+      border-left: 5px solid rgba(110,231,255,.6);
+      padding: 10px 12px;
+      background: rgba(110,231,255,.08);
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="site-title">Skywatch Club</h1>
+    <p class="tagline">Gallery — simple local images + captions</p>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html"><button class="navbtn" type="button">Home</button></a>
+      <a href="gallery.html"><button class="navbtn" type="button">Gallery</button></a>
+      <a href="plan.html"><button class="navbtn" type="button">Meetup Plan</button></a>
+      <a href="contact.html"><button class="navbtn" type="button">Join / Contact</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card hint">
+      <strong>Tip:</strong> Each image uses an <code>alt</code> attribute for accessibility.
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <figure>
+          <img src="images/nebula.svg" alt="Abstract nebula image with title text 'Nebula Night'">
+          <figcaption>Nebula Night — a calm gradient sky placeholder.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="images/starpath.svg" alt="Simple line chart-like star path with bright markers">
+          <figcaption>Star Path — a stylized route across the sky.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="images/mission.svg" alt="Mission board with three labeled bars: Build, Learn, Share">
+          <figcaption>Mission Board — what we aim to do each semester.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Back to planning</h2>
+      <p>
+        Next, see our <a href="plan.html">Meetup Plan</a> for dates and what to bring.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Skywatch Club website — Gallery page.</p>
+  </footer>
+</body>
+</html>

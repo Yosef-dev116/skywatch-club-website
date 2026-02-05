@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Skywatch Club | Join / Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* internal CSS */
+    .tiny{
+      font-size: .9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="site-title">Skywatch Club</h1>
+    <p class="tagline">Join / Contact — form with major components</p>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html"><button class="navbtn" type="button">Home</button></a>
+      <a href="gallery.html"><button class="navbtn" type="button">Gallery</button></a>
+      <a href="plan.html"><button class="navbtn" type="button">Meetup Plan</button></a>
+      <a href="contact.html"><button class="navbtn" type="button">Join / Contact</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Sign-up form</h2>
+      <p class="tiny">
+        This demo form uses common inputs (text, email, tel, date, color, range),
+        plus radio buttons, checkboxes, a select menu, a textarea, and submit/reset buttons.
+      </p>
+
+      <form method="post" action="#">
+        <div class="form-row">
+          <div>
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Your name" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="phone">Phone (format: 123-456-7890)</label>
+            <input id="phone" name="phone" type="tel" placeholder="123-456-7890"
+                   pattern="\d{3}-\d{3}-\d{4}" required>
+          </div>
+
+          <div>
+            <label for="meetdate">Preferred meetup date</label>
+            <input id="meetdate" name="meetdate" type="date">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="favcolor">Favorite star color</label>
+            <input id="favcolor" name="favcolor" type="color" value="#6ee7ff">
+          </div>
+
+          <div>
+            <label for="skill">Experience level (0–10)</label>
+            <input id="skill" name="skill" type="range" min="0" max="10" value="4">
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Choose your role</legend>
+          <div class="inline">
+            <label><input type="radio" name="role" value="observer" checked> Observer</label>
+            <label><input type="radio" name="role" value="photographer"> Photographer</label>
+            <label><input type="radio" name="role" value="helper"> Helper</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <div class="inline">
+            <label><input type="checkbox" name="interest" value="moon"> Moon</label>
+            <label><input type="checkbox" name="interest" value="planets"> Planets</label>
+            <label><input type="checkbox" name="interest" value="deep-sky"> Deep-sky</label>
+          </div>
+        </fieldset>
+
+        <label for="gear">Do you have any gear?</label>
+        <select id="gear" name="gear">
+          <option value="none">No gear yet</option>
+          <option value="binoculars">Binoculars</option>
+          <option value="telescope">Telescope</option>
+          <option value="camera">Camera + tripod</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us what you want to learn..."></textarea>
+
+        <div class="actions">
+          <input class="actionbtn" type="submit" value="Submit">
+          <input class="actionbtn secondary" type="reset" value="Clear">
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Other contact options</h2>
+      <p>
+        Email: <a href="mailto:skywatch@example.com">skywatch@example.com</a><br>
+        Learn more on the <a href="index.html">Home</a> page.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Skywatch Club website — Join / Contact page.</p>
+  </footer>
+</body>
+</html>
